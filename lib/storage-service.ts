@@ -1,7 +1,17 @@
 import { getStorage, ref, uploadBytes, getDownloadURL, deleteObject } from 'firebase/storage';
 import { app } from './firebase';
 
-const storage = getStorage(app);
+let storage: ReturnType<typeof getStorage> | null = null;
+
+function getStorageInstance() {
+  if (!app) {
+    throw new Error('Firebase Storage is not configured');
+  }
+  if (!storage) {
+    storage = getStorage(app);
+  }
+  return storage;
+}
 
 const ALLOWED_TYPES = ['application/pdf', 'image/jpeg', 'image/png', 'image/webp', 'image/gif'];
 const RESUME_TYPES = ['application/pdf', 'application/msword', 'application/vnd.openxmlformats-officedocument.wordprocessingml.document'];
@@ -18,7 +28,7 @@ export async function uploadProofFile(file: File, userId: string): Promise<strin
   const timestamp = Date.now();
   const safeName = file.name.replace(/[^a-zA-Z0-9._-]/g, '_');
   const path = `proof-documents/${userId}/${timestamp}_${safeName}`;
-  const storageRef = ref(storage, path);
+  const storageRef = ref(getStorageInstance(), path);
 
   await uploadBytes(storageRef, file);
   const url = await getDownloadURL(storageRef);
@@ -37,7 +47,7 @@ export async function uploadResume(file: File, userId: string): Promise<string> 
   const timestamp = Date.now();
   const safeName = file.name.replace(/[^a-zA-Z0-9._-]/g, '_');
   const path = `resumes/${userId}/${timestamp}_${safeName}`;
-  const storageRef = ref(storage, path);
+  const storageRef = ref(getStorageInstance(), path);
 
   await uploadBytes(storageRef, file);
   const url = await getDownloadURL(storageRef);
@@ -46,7 +56,7 @@ export async function uploadResume(file: File, userId: string): Promise<string> 
 
 export async function deleteProofFile(url: string): Promise<void> {
   try {
-    const storageRef = ref(storage, url);
+    const storageRef = ref(getStorageInstance(), url);
     await deleteObject(storageRef);
   } catch (e) {
     console.warn('Failed to delete file:', e);
