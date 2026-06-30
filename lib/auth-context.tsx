@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 'use client';
 import { createContext, useContext, useEffect, useState, ReactNode } from 'react';
 import { User, onAuthStateChanged, signInWithEmailAndPassword, createUserWithEmailAndPassword, signOut, GoogleAuthProvider, signInWithPopup, updateProfile } from 'firebase/auth';
@@ -95,8 +94,3 @@ export function AuthProvider({ children }: { children: ReactNode }) {
 }
 
 export const useAuth = () => useContext(AuthContext);
-=======
-version https://git-lfs.github.com/spec/v1
-oid sha256:a97d0f17eb99054f2bd70b340d66fb230807b425a20db95d35cb59ceece609ed
-size 3542
->>>>>>> 850a4ceb7bc877c65ebdeedc624b9d3e996394c5

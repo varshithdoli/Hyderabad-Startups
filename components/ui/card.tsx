@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import * as React from "react"
 
 import { cn } from "@/lib/utils"
@@ -102,8 +101,3 @@ export {
   CardDescription,
   CardContent,
 }
-=======
-version https://git-lfs.github.com/spec/v1
-oid sha256:a41b4d3d618416128d0093af2575048a2de8ef25c0926bcea4f19a24a59de476
-size 2641
->>>>>>> 850a4ceb7bc877c65ebdeedc624b9d3e996394c5

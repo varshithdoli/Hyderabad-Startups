@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 {
   "name": "hyderabad-startups",
   "version": "0.1.0",
@@ -38,8 +37,3 @@
     "typescript": "^5"
   }
 }
-=======
-version https://git-lfs.github.com/spec/v1
-oid sha256:6d8aca330592136dd49839d899bffd5eed6baec97395e3d57419a2effc7378cd
-size 927
->>>>>>> 850a4ceb7bc877c65ebdeedc624b9d3e996394c5

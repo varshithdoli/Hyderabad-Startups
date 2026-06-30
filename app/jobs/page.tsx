@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 'use client';
 import { useState, useMemo, useEffect, useRef } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
@@ -298,8 +297,3 @@ export default function JobsPage() {
     </div>
   );
 }
-=======
-version https://git-lfs.github.com/spec/v1
-oid sha256:ca9a5bdb8b81e592014c0d2e9be95f05fd95bf2499d131702f618ef14065b993
-size 15936
->>>>>>> 850a4ceb7bc877c65ebdeedc624b9d3e996394c5

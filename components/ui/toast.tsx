@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 'use client';
 import { createContext, useContext, useState, useCallback, type ReactNode } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
@@ -86,8 +85,3 @@ export function ToastProvider({ children }: { children: ReactNode }) {
 }
 
 export const useToast = () => useContext(ToastContext);
-=======
-version https://git-lfs.github.com/spec/v1
-oid sha256:e576b172185731ec898d1ecd9e6305d2a7965b4cf6b4ec880a78eb2ac68364e6
-size 3050
->>>>>>> 850a4ceb7bc877c65ebdeedc624b9d3e996394c5

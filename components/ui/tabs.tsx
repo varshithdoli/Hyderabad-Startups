@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 "use client"
 
 import { Tabs as TabsPrimitive } from "@base-ui/react/tabs"
@@ -81,8 +80,3 @@ function TabsContent({ className, ...props }: TabsPrimitive.Panel.Props) {
 }
 
 export { Tabs, TabsList, TabsTrigger, TabsContent, tabsListVariants }
-=======
-version https://git-lfs.github.com/spec/v1
-oid sha256:8bf9ee3935ab86c268a2a71cb5b4b67d3d5587ca9f2e0bf25f37ffdb1980434c
-size 3497
->>>>>>> 850a4ceb7bc877c65ebdeedc624b9d3e996394c5

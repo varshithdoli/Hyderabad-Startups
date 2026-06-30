@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import { NextResponse } from 'next/server';
 import { db } from '@/lib/firebase';
 import { collection, getDocs, doc, setDoc, serverTimestamp } from 'firebase/firestore';
@@ -120,8 +119,3 @@ export async function POST(request: Request) {
     return NextResponse.json({ error: 'Failed to create startup' }, { status: 500 });
   }
 }
-=======
-version https://git-lfs.github.com/spec/v1
-oid sha256:5423973d3c99802c9ac12d935517e3f30bbcc8e7bf23ed313b041dd8e282c254
-size 3881
->>>>>>> 850a4ceb7bc877c65ebdeedc624b9d3e996394c5

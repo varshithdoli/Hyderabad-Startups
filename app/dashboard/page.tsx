@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 'use client';
 import { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
@@ -151,8 +150,3 @@ export default function DashboardPage() {
     </div>
   );
 }
-=======
-version https://git-lfs.github.com/spec/v1
-oid sha256:c9ef86b3744d1bde6eb58a20d0fa212f089a39ea53320920d6b762bcb76b9e7e
-size 9189
->>>>>>> 850a4ceb7bc877c65ebdeedc624b9d3e996394c5

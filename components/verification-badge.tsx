@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 'use client';
 import { Shield, ShieldCheck, ShieldAlert } from 'lucide-react';
 
@@ -57,8 +56,3 @@ export default function VerificationBadge({ verified, level, size = 'sm', showLa
     </span>
   );
 }
-=======
-version https://git-lfs.github.com/spec/v1
-oid sha256:5133f1d92db6ed1496b413494d7ebbc01ca56f0dffff32c7099c97b37d812613
-size 1532
->>>>>>> 850a4ceb7bc877c65ebdeedc624b9d3e996394c5

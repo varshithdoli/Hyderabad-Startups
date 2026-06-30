@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 'use client';
 import { useState, useRef } from 'react';
 import { motion } from 'framer-motion';
@@ -310,8 +309,3 @@ export default function SubmitStartupPage() {
     </div>
   );
 }
-=======
-version https://git-lfs.github.com/spec/v1
-oid sha256:8e32743b88e152e9dff47e4525d5d69f3be99dba1379a55fd3ad73898984315c
-size 17599
->>>>>>> 850a4ceb7bc877c65ebdeedc624b9d3e996394c5

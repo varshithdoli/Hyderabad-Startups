@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import { NextResponse } from 'next/server';
 import type { NextRequest } from 'next/server';
 import { db } from '@/lib/firebase';
@@ -49,8 +48,3 @@ export async function DELETE(_req: NextRequest, ctx: RouteContext<'/api/startups
     return NextResponse.json({ error: 'Failed to delete startup' }, { status: 500 });
   }
 }
-=======
-version https://git-lfs.github.com/spec/v1
-oid sha256:2d101d2ee3cd4e53ff220fafa65f0740a929f6226da8f90e3c98d6b2198189cc
-size 1873
->>>>>>> 850a4ceb7bc877c65ebdeedc624b9d3e996394c5

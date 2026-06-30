@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 "use client"
 
 import { Button as ButtonPrimitive } from "@base-ui/react/button"
@@ -59,8 +58,3 @@ function Button({
 }
 
 export { Button, buttonVariants }
-=======
-version https://git-lfs.github.com/spec/v1
-oid sha256:13076996de4a924922935376faa0a66221e4fec9eb8e6fd53ac45f3cf1c05c6b
-size 3211
->>>>>>> 850a4ceb7bc877c65ebdeedc624b9d3e996394c5

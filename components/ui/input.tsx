@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import * as React from "react"
 import { Input as InputPrimitive } from "@base-ui/react/input"
 
@@ -19,8 +18,3 @@ function Input({ className, type, ...props }: React.ComponentProps<"input">) {
 }
 
 export { Input }
-=======
-version https://git-lfs.github.com/spec/v1
-oid sha256:f7d6ecff9a4d631feeaf401c02bb87e26ddb38131c55d15a43b9290747390847
-size 1040
->>>>>>> 850a4ceb7bc877c65ebdeedc624b9d3e996394c5

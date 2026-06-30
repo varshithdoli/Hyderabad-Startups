@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 export interface Startup {
   id: string;
   name: string;
@@ -519,8 +518,3 @@ export const hyderabadVsBangalore = [
   { metric: 'Traffic Commute', hyderabad: '58-59 min', bangalore: '75-90 min', edge: 'Hyderabad' },
   { metric: 'Airport to City', hyderabad: '35-45 min', bangalore: '60-90 min', edge: 'Hyderabad' },
 ];
-=======
-version https://git-lfs.github.com/spec/v1
-oid sha256:345d95f11d9d4677f229a6f63c612d4ef859dda1c867104e554015c1acfbc7c4
-size 29466
->>>>>>> 850a4ceb7bc877c65ebdeedc624b9d3e996394c5

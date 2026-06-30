@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 'use client';
 import { use, useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
@@ -214,8 +213,3 @@ export default function StartupPage({ params }: { params: Promise<{ id: string }
     </div>
   );
 }
-=======
-version https://git-lfs.github.com/spec/v1
-oid sha256:8ddd75bb1d20ed411831152c7fccb7e497a075c9be3a3efd2ec03489cfb83036
-size 12388
->>>>>>> 850a4ceb7bc877c65ebdeedc624b9d3e996394c5

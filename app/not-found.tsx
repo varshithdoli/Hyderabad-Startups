@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import Link from 'next/link';
 import { Home, Search, ArrowLeft } from 'lucide-react';
 
@@ -38,8 +37,3 @@ export default function NotFound() {
     </div>
   );
 }
-=======
-version https://git-lfs.github.com/spec/v1
-oid sha256:400b4d78f3664aab99119eb684687f7c73e2159ce0dcfcaddc8388a0b0d32050
-size 1710
->>>>>>> 850a4ceb7bc877c65ebdeedc624b9d3e996394c5

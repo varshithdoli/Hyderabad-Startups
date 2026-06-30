@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 'use client';
 import { useState, useMemo } from 'react';
 import { motion } from 'framer-motion';
@@ -265,8 +264,3 @@ export default function InvestorsPage() {
     </div>
   );
 }
-=======
-version https://git-lfs.github.com/spec/v1
-oid sha256:dc5ed3dc84be3ed1379d49c8a668472904bfbd4157ecaa9a0ea585d07cf01812
-size 11021
->>>>>>> 850a4ceb7bc877c65ebdeedc624b9d3e996394c5

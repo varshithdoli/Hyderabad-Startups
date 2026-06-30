@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 'use client';
 import { motion } from 'framer-motion';
 import { neighbourhoods, breweries, restaurants } from '@/data/startups';
@@ -128,8 +127,3 @@ export default function CityGuidePage() {
     </div>
   );
 }
-=======
-version https://git-lfs.github.com/spec/v1
-oid sha256:e155ca0811c8da0ce5df27b2559c56e222d8f06cb68f943c7e6d012fc5461664
-size 7483
->>>>>>> 850a4ceb7bc877c65ebdeedc624b9d3e996394c5

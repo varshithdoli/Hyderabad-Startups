@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 'use client';
 import { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
@@ -74,8 +73,3 @@ export default function ProfilePage() {
     </div>
   );
 }
-=======
-version https://git-lfs.github.com/spec/v1
-oid sha256:d70fd6ac73828d5d60ebf603d344d0da9400f83c470f4bf79365df9197acc6c5
-size 3731
->>>>>>> 850a4ceb7bc877c65ebdeedc624b9d3e996394c5

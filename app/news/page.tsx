@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 'use client';
 import { useState } from 'react';
 import { motion } from 'framer-motion';
@@ -291,8 +290,3 @@ export default function NewsPage() {
     </div>
   );
 }
-=======
-version https://git-lfs.github.com/spec/v1
-oid sha256:2b965f39ba941a65ae110813408a5106ba4b5d5535f10302a7d2634be7525c0a
-size 12408
->>>>>>> 850a4ceb7bc877c65ebdeedc624b9d3e996394c5

@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import { MetadataRoute } from 'next';
 
 export default function sitemap(): MetadataRoute.Sitemap {
@@ -26,8 +25,3 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   return staticRoutes;
 }
-=======
-version https://git-lfs.github.com/spec/v1
-oid sha256:6c38657b0fa2b86d230b7d13d482c0caa26df10dd290051c124227d0b64442a8
-size 554
->>>>>>> 850a4ceb7bc877c65ebdeedc624b9d3e996394c5

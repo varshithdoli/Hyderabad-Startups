@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import { getStorage, ref, uploadBytes, getDownloadURL, deleteObject } from 'firebase/storage';
 import { app } from './firebase';
 
@@ -53,8 +52,3 @@ export async function deleteProofFile(url: string): Promise<void> {
     console.warn('Failed to delete file:', e);
   }
 }
-=======
-version https://git-lfs.github.com/spec/v1
-oid sha256:d0b8d834a27b478bcbf7f5f8585ca7c487d8b642c84015ef2cb9c4b061471b56
-size 2021
->>>>>>> 850a4ceb7bc877c65ebdeedc624b9d3e996394c5

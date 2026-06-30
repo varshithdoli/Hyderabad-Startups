@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 'use client';
 import { useState, useMemo, useEffect } from 'react';
 import { motion } from 'framer-motion';
@@ -276,8 +275,3 @@ export default function ExplorePage() {
     </div>
   );
 }
-=======
-version https://git-lfs.github.com/spec/v1
-oid sha256:ead1d0631a91858f38e3d68783247ccb75bd266c4e83fcdd695034f96e233b7b
-size 13491
->>>>>>> 850a4ceb7bc877c65ebdeedc624b9d3e996394c5

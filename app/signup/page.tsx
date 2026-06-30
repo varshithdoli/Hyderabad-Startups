@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 'use client';
 import { useState } from 'react';
 import { useAuth } from '@/lib/auth-context';
@@ -84,8 +83,3 @@ export default function SignupPage() {
     </div>
   );
 }
-=======
-version https://git-lfs.github.com/spec/v1
-oid sha256:a365b89d03fd0688b010fdea272efa1e31f5172e733724a01ce56f6d1cc02618
-size 5490
->>>>>>> 850a4ceb7bc877c65ebdeedc624b9d3e996394c5

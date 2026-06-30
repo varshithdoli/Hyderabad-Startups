@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import { db } from './firebase';
 import {
   collection, doc, getDocs, getDoc, addDoc, updateDoc, deleteDoc,
@@ -393,8 +392,3 @@ export async function getAdminStats() {
     };
   }
 }
-=======
-version https://git-lfs.github.com/spec/v1
-oid sha256:b1c8bfc86f8a00dc3eb34ff71649bc1834c2845d7f1887d839398212b6f3313a
-size 13026
->>>>>>> 850a4ceb7bc877c65ebdeedc624b9d3e996394c5

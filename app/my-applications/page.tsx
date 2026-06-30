@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 'use client';
 import { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
@@ -142,8 +141,3 @@ export default function MyApplicationsPage() {
     </div>
   );
 }
-=======
-version https://git-lfs.github.com/spec/v1
-oid sha256:66041578fbc48123bd666309cd2264fef5bbf43e43f5cbf87ceabb0723e4881e
-size 7300
->>>>>>> 850a4ceb7bc877c65ebdeedc624b9d3e996394c5

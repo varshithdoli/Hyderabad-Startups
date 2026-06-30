@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 'use client';
 import { motion } from 'framer-motion';
 
@@ -37,8 +36,3 @@ export default function Loading() {
     </div>
   );
 }
-=======
-version https://git-lfs.github.com/spec/v1
-oid sha256:18dcfb5a6c982ce24b8363ed1288db344621d28841c9a662b190ce402eb5538e
-size 1772
->>>>>>> 850a4ceb7bc877c65ebdeedc624b9d3e996394c5

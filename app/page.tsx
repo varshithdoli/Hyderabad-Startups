@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 'use client';
 import dynamic from 'next/dynamic';
 import { motion } from 'framer-motion';
@@ -423,8 +422,3 @@ export default function HomePage() {
     </div>
   );
 }
-=======
-version https://git-lfs.github.com/spec/v1
-oid sha256:503e50724f767579bf78e53a71f67e129d9c3ec26e0e31c1f2ec3715eb7c9998
-size 26739
->>>>>>> 850a4ceb7bc877c65ebdeedc624b9d3e996394c5

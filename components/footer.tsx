@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 'use client';
 import Link from 'next/link';
 import { motion } from 'framer-motion';
@@ -133,8 +132,3 @@ export function Footer() {
     </footer>
   );
 }
-=======
-version https://git-lfs.github.com/spec/v1
-oid sha256:6e4b61afca9866743534710826e671f0b7a22ddf747326c3be1aa0c312cfb712
-size 5602
->>>>>>> 850a4ceb7bc877c65ebdeedc624b9d3e996394c5

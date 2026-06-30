@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import { cn } from '@/lib/utils';
 
 function Skeleton({ className, ...props }: React.HTMLAttributes<HTMLDivElement>) {
@@ -45,8 +44,3 @@ function SkeletonRow({ className }: { className?: string }) {
 }
 
 export { Skeleton, SkeletonCard, SkeletonRow };
-=======
-version https://git-lfs.github.com/spec/v1
-oid sha256:0b0cd1c68676e3f504d29df8ac4df184eebacb395fda0f385258341d7230c745
-size 1507
->>>>>>> 850a4ceb7bc877c65ebdeedc624b9d3e996394c5

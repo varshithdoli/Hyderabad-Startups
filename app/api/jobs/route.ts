@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import { NextResponse } from 'next/server';
 import { db } from '@/lib/firebase';
 import { collection, getDocs, addDoc, serverTimestamp } from 'firebase/firestore';
@@ -56,8 +55,3 @@ export async function POST(request: Request) {
     return NextResponse.json({ error: 'Failed to create job' }, { status: 500 });
   }
 }
-=======
-version https://git-lfs.github.com/spec/v1
-oid sha256:2b42a31611ec9e81a7e09dc72c4b9c4374430aa93532d7e903ed9aebd33681a6
-size 1784
->>>>>>> 850a4ceb7bc877c65ebdeedc624b9d3e996394c5

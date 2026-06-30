@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
@@ -51,8 +50,3 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
     </html>
   );
 }
-=======
-version https://git-lfs.github.com/spec/v1
-oid sha256:3e6ccbc5dec7feda23f67982de81e315232e0eb0c8e9a5ba1e387d336835e9d2
-size 1977
->>>>>>> 850a4ceb7bc877c65ebdeedc624b9d3e996394c5

@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 'use client';
 import { cn } from '@/lib/utils';
 import React, { useEffect, useRef } from 'react';
@@ -205,8 +204,3 @@ export function DottedSurface({ className, children, ...props }: DottedSurfacePr
     </div>
   );
 }
-=======
-version https://git-lfs.github.com/spec/v1
-oid sha256:cd9b6a2d35f1e51da30b1cea7afb668f46219792733b877dddca6c99ad54e335
-size 7250
->>>>>>> 850a4ceb7bc877c65ebdeedc624b9d3e996394c5

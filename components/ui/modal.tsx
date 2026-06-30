@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 'use client';
 import { useEffect, type ReactNode } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
@@ -81,8 +80,3 @@ export function Modal({ open, onClose, children, title, subtitle, maxWidth = 'ma
     </AnimatePresence>
   );
 }
-=======
-version https://git-lfs.github.com/spec/v1
-oid sha256:5c6b259913c65421dfe2dd8d3c4cbf31d316711ffe5ef04910fe06fd34da7542
-size 2670
->>>>>>> 850a4ceb7bc877c65ebdeedc624b9d3e996394c5

@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 'use client';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
@@ -220,8 +219,3 @@ export function Navbar() {
     </motion.nav>
   );
 }
-=======
-version https://git-lfs.github.com/spec/v1
-oid sha256:f88840de4d84b5deb17f7d77e618bbcf65b1eaa9d2d79166109b33efe8bebf9d
-size 10051
->>>>>>> 850a4ceb7bc877c65ebdeedc624b9d3e996394c5

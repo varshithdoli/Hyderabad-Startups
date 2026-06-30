@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import { mergeProps } from "@base-ui/react/merge-props"
 import { useRender } from "@base-ui/react/use-render"
 import { cva, type VariantProps } from "class-variance-authority"
@@ -51,8 +50,3 @@ function Badge({
 }
 
 export { Badge, badgeVariants }
-=======
-version https://git-lfs.github.com/spec/v1
-oid sha256:968b0403af74a785c9408ca69a677235e49d0c80b2c27fb9858ad421a8778c7d
-size 1925
->>>>>>> 850a4ceb7bc877c65ebdeedc624b9d3e996394c5

@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 'use client';
 import { useEffect } from 'react';
 import { motion } from 'framer-motion';
@@ -54,8 +53,3 @@ export default function Error({
     </div>
   );
 }
-=======
-version https://git-lfs.github.com/spec/v1
-oid sha256:18dd218283adf4fb5826f320b6f618b80ad5834e5f2821d7e5433ae8be112e8f
-size 2006
->>>>>>> 850a4ceb7bc877c65ebdeedc624b9d3e996394c5

@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 'use client';
 import { useState, useEffect, useMemo } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
@@ -232,8 +231,3 @@ export default function ComparePage() {
     </div>
   );
 }
-=======
-version https://git-lfs.github.com/spec/v1
-oid sha256:247c16ac47779fadfd0786954eca4ff24f4f44d6d7340ebe716dd9fd86e32a71
-size 11421
->>>>>>> 850a4ceb7bc877c65ebdeedc624b9d3e996394c5

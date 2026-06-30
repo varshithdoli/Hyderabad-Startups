@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import { NextResponse } from 'next/server';
 import { db } from '@/lib/firebase';
 import { collection, getDocs } from 'firebase/firestore';
@@ -36,8 +35,3 @@ export async function GET() {
     });
   }
 }
-=======
-version https://git-lfs.github.com/spec/v1
-oid sha256:d6c02e052798e46b22f84b721c10e4c712ac475199601a3d42dc78f341d4d6ad
-size 1276
->>>>>>> 850a4ceb7bc877c65ebdeedc624b9d3e996394c5
