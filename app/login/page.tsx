@@ -6,6 +6,8 @@ import Link from 'next/link';
 import { motion } from 'framer-motion';
 import { Mail, Lock, ArrowRight } from 'lucide-react';
 
+const AUTH_DISABLED_MESSAGE = 'Authentication is currently unavailable. Please contact the site admin or try again later.';
+
 export default function LoginPage() {
   const { login, loginWithGoogle } = useAuth();
   const router = useRouter();
@@ -18,11 +20,25 @@ export default function LoginPage() {
     e.preventDefault();
     setError('');
     setLoading(true);
-    try { await login(email, password); router.push('/explore'); } catch (err: any) { setError(err.message || 'Login failed'); } finally { setLoading(false); }
+    try {
+      await login(email, password);
+      router.push('/explore');
+    } catch (err: any) {
+      const message = err?.message || 'Login failed';
+      setError(message.includes('not configured') ? AUTH_DISABLED_MESSAGE : message);
+    } finally {
+      setLoading(false);
+    }
   };
 
   const handleGoogle = async () => {
-    try { await loginWithGoogle(); router.push('/explore'); } catch (err: any) { setError(err.message); }
+    try {
+      await loginWithGoogle();
+      router.push('/explore');
+    } catch (err: any) {
+      const message = err?.message || 'Google sign-in failed';
+      setError(message.includes('not configured') ? AUTH_DISABLED_MESSAGE : message);
+    }
   };
 
   return (
