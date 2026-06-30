@@ -10,7 +10,10 @@ export async function GET(request: Request) {
     const category = searchParams.get('category');
     const companyId = searchParams.get('companyId');
 
-    const snap = await getDocs(collection(db, 'jobs'));
+    const firestore = db;
+    if (!firestore) throw new Error('Firestore not configured');
+
+    const snap = await getDocs(collection(firestore, 'jobs'));
     let jobs: Job[];
 
     if (snap.empty) {
@@ -42,7 +45,10 @@ export async function POST(request: Request) {
       return NextResponse.json({ error: 'Title and company are required' }, { status: 400 });
     }
 
-    const ref = await addDoc(collection(db, 'jobs'), {
+    const firestore = db;
+    if (!firestore) throw new Error('Firestore not configured');
+
+    const ref = await addDoc(collection(firestore, 'jobs'), {
       ...body,
       startupId: body.startupId || body.companyId,
       source: body.source || 'manual',

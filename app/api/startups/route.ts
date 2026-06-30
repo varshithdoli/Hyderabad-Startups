@@ -13,8 +13,11 @@ export async function GET(request: Request) {
     const page = parseInt(searchParams.get('page') || '1');
     const limit = parseInt(searchParams.get('limit') || '50');
 
+    const firestore = db;
+    if (!firestore) throw new Error('Firestore not configured');
+
     // Fetch from Firestore
-    const snap = await getDocs(collection(db, 'startups'));
+    const snap = await getDocs(collection(firestore, 'startups'));
     let startups: Startup[];
 
     if (snap.empty) {
@@ -104,7 +107,10 @@ export async function POST(request: Request) {
 
     const id = body.id || body.name.toLowerCase().replace(/[^a-z0-9]+/g, '-');
 
-    await setDoc(doc(db, 'startups', id), {
+    const firestore = db;
+    if (!firestore) throw new Error('Firestore not configured');
+
+    await setDoc(doc(firestore, 'startups', id), {
       ...body,
       id,
       verified: body.verified ?? true,

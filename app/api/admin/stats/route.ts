@@ -5,12 +5,15 @@ import { startups as staticStartups, jobs as staticJobs } from '@/data/startups'
 
 export async function GET() {
   try {
+    const firestore = db;
+    if (!firestore) throw new Error('Firestore not configured');
+
     const [startupsSnap, jobsSnap, subsSnap, appsSnap, usersSnap] = await Promise.all([
-      getDocs(collection(db, 'startups')),
-      getDocs(collection(db, 'jobs')),
-      getDocs(collection(db, 'startup_submissions')),
-      getDocs(collection(db, 'job_applications')),
-      getDocs(collection(db, 'users')),
+      getDocs(collection(firestore, 'startups')),
+      getDocs(collection(firestore, 'jobs')),
+      getDocs(collection(firestore, 'startup_submissions')),
+      getDocs(collection(firestore, 'job_applications')),
+      getDocs(collection(firestore, 'users')),
     ]);
 
     const submissions = subsSnap.docs.map(d => d.data());
