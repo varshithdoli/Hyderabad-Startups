@@ -1,0 +1,26 @@
+<<<<<<< HEAD
+import { initializeApp, getApps } from 'firebase/app';
+import { getAuth } from 'firebase/auth';
+import { getFirestore } from 'firebase/firestore';
+
+const firebaseConfig = {
+  apiKey: process.env.NEXT_PUBLIC_FIREBASE_API_KEY,
+  authDomain: process.env.NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN,
+  projectId: process.env.NEXT_PUBLIC_FIREBASE_PROJECT_ID,
+  storageBucket: process.env.NEXT_PUBLIC_FIREBASE_STORAGE_BUCKET,
+  messagingSenderId: process.env.NEXT_PUBLIC_FIREBASE_MESSAGING_SENDER_ID,
+  appId: process.env.NEXT_PUBLIC_FIREBASE_APP_ID,
+};
+
+const app = getApps().length === 0 ? initializeApp(firebaseConfig) : getApps()[0];
+const auth = getAuth(app);
+
+// Database ID is "default" (without parentheses), not the standard "(default)"
+const db = getFirestore(app, "default");
+
+export { app, auth, db };
+=======
+version https://git-lfs.github.com/spec/v1
+oid sha256:24b1e69f645db6e7f812d00f267b8b5ac8ecc627761632d5c7a9c9caa5ed694b
+size 797
+>>>>>>> 850a4ceb7bc877c65ebdeedc624b9d3e996394c5
