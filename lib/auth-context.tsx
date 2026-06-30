@@ -5,6 +5,7 @@ import { doc, setDoc, getDoc } from 'firebase/firestore';
 import { auth, db } from './firebase';
 
 const ADMIN_EMAIL = 'varshithd22@gmail.com';
+const FIREBASE_CONFIG_MESSAGE = 'Firebase Auth/Firestore is not configured for this deployment. Add the Firebase environment variables in Vercel or your hosting platform.';
 
 interface AuthContextType {
   user: User | null;
@@ -58,13 +59,13 @@ export function AuthProvider({ children }: { children: ReactNode }) {
   }, []);
 
   const login = async (email: string, password: string) => {
-    if (!auth) throw new Error('Firebase Auth is not configured');
+    if (!auth) throw new Error(FIREBASE_CONFIG_MESSAGE);
     await signInWithEmailAndPassword(auth, email, password);
   };
 
   const signup = async (email: string, password: string, name: string) => {
-    if (!auth) throw new Error('Firebase Auth is not configured');
-    if (!db) throw new Error('Firestore is not configured');
+    if (!auth) throw new Error(FIREBASE_CONFIG_MESSAGE);
+    if (!db) throw new Error(FIREBASE_CONFIG_MESSAGE);
 
     const r = await createUserWithEmailAndPassword(auth, email, password);
     await updateProfile(r.user, { displayName: name });
@@ -76,8 +77,8 @@ export function AuthProvider({ children }: { children: ReactNode }) {
   };
 
   const loginWithGoogle = async () => {
-    if (!auth) throw new Error('Firebase Auth is not configured');
-    if (!db) throw new Error('Firestore is not configured');
+    if (!auth) throw new Error(FIREBASE_CONFIG_MESSAGE);
+    if (!db) throw new Error(FIREBASE_CONFIG_MESSAGE);
 
     const r = await signInWithPopup(auth, new GoogleAuthProvider());
     const d = await getDoc(doc(db, 'users', r.user.uid));
@@ -91,13 +92,13 @@ export function AuthProvider({ children }: { children: ReactNode }) {
   };
 
   const logout = async () => {
-    if (!auth) throw new Error('Firebase Auth is not configured');
+    if (!auth) throw new Error(FIREBASE_CONFIG_MESSAGE);
     await signOut(auth);
   };
 
   const toggleSaveStartup = async (id: string) => {
     if (!user) return;
-    if (!db) throw new Error('Firestore is not configured');
+    if (!db) throw new Error(FIREBASE_CONFIG_MESSAGE);
     const ns = savedStartups.includes(id) ? savedStartups.filter(s => s !== id) : [...savedStartups, id];
     setSavedStartups(ns);
     await setDoc(doc(db, 'users', user.uid), { savedStartups: ns }, { merge: true });

@@ -6,6 +6,8 @@ import Link from 'next/link';
 import { motion } from 'framer-motion';
 import { Mail, Lock, User, ArrowRight } from 'lucide-react';
 
+const AUTH_DISABLED_MESSAGE = 'Authentication and database access are currently unavailable for this deployment. Please add the Firebase environment variables in Vercel or your hosting platform.';
+
 export default function SignupPage() {
   const { signup, loginWithGoogle } = useAuth();
   const router = useRouter();
@@ -19,11 +21,25 @@ export default function SignupPage() {
     e.preventDefault();
     setError('');
     setLoading(true);
-    try { await signup(email, password, name); router.push('/explore'); } catch (err: any) { setError(err.message || 'Signup failed'); } finally { setLoading(false); }
+    try {
+      await signup(email, password, name);
+      router.push('/explore');
+    } catch (err: any) {
+      const message = err?.message || 'Signup failed';
+      setError(message.includes('not configured') ? AUTH_DISABLED_MESSAGE : message);
+    } finally {
+      setLoading(false);
+    }
   };
 
   const handleGoogle = async () => {
-    try { await loginWithGoogle(); router.push('/explore'); } catch (err: any) { setError(err.message); }
+    try {
+      await loginWithGoogle();
+      router.push('/explore');
+    } catch (err: any) {
+      const message = err?.message || 'Google sign-in failed';
+      setError(message.includes('not configured') ? AUTH_DISABLED_MESSAGE : message);
+    }
   };
 
   return (
